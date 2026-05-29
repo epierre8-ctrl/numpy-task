@@ -21,7 +21,14 @@ def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
 
 def operazioni_elemento_per_elemento(v1: list) -> tuple:
     """Sub-task 5: Restituisce (seno, coseno, arcoseno, arcocoseno) elemento per elemento calcolati sul primo array."""
-    pass
+    seno = np.sin(np.array(v1))
+    coseno = np.cos(np.array(v1))
+    arcoseno = np.arcsin(np.array(v1))
+    arcocoseno = np.acos(np.array(v1))
+
+    return seno, coseno, arcoseno, arcocoseno
+
+
 
 
 def main():
